@@ -1,16 +1,15 @@
 {
-  "name": "TimerOne",
+  "name": "ArduinoTimer",
   "keywords": "timer",
-  "description": "Allow to use the built-in Timer1",
+  "description": "Arduino Timer library allows implementing arduino projects that can be completely async, and allows sleep mode when CPU is idle",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/PaulStoffregen/TimerOne.git"
+    "url": "https://github.com/Nero7991/ArduinoTimer"
   },
   "frameworks": "arduino",
   "platforms":
   [
-    "atmelavr",
-    "teensy"
+    "atmelavr"
   ]
 }
