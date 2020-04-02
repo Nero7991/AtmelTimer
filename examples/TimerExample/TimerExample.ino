@@ -28,9 +28,9 @@ void sleep(){
   // put micro to sleep
   //Serial.println("Sleeping...");
   //delay(10);
-  Serial.end();
+  //Serial.end();
   T1.powerDown(SLEEP_MODE_PWR_SAVE);
-  Serial.begin(9600);
+  //Serial.begin(9600);
 }
 
 void setup() {
@@ -42,9 +42,9 @@ void setup() {
   T1.initializeTimer();
   T2.initializeTimer();
   T3.initializeTimer();
-  T1.setCallBackTime(500, TIMER_MODE_REPEAT, timerOne);
+  T1.setCallBackTime(200, TIMER_MODE_REPEAT, timerOne);
   T2.setCallBackTime(5000, TIMER_MODE_REPEAT, timerTwo);
-  T3.setCallBackTime(20000, TIMER_MODE_ONCE, enableSleep);
+  T3.setCallBackTime(6000, TIMER_MODE_ONCE, enableSleep);
   Serial.println("Done.");
 }
 

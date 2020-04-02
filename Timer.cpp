@@ -167,6 +167,7 @@ void TimerClass::powerDown(uint8_t mode){
 	// /* Set new prescaler (time-out) value = 64K cycles (~0.5 s) */
 	// WDTCR = prescale;
 	asm volatile("sei"::);
+	//PRR = (1 << PRUSART0);
 	//sleep_bod_disable();
 	set_sleep_mode(mode);
 	sleep_enable();
